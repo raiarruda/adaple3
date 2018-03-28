@@ -38,11 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-
+    #packages
+    'embed_video',
 
     #meus apps
     'projeto.core',
     'projeto.accounts',
+    'projeto.edp',
 ]
 
 MIDDLEWARE = [

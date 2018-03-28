@@ -19,6 +19,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     name = models.CharField('Nome', max_length=100, blank=True)
     is_active = models.BooleanField('Está ativo?', blank=True, default=True)
     is_staff = models.BooleanField('É da equipe?', blank=True, default=False)
+ #   is_professor = models.BooleanField('É professor?', blank=True)
     date_joined = models.DateTimeField('Data de Entrada', auto_now_add=True)
 
     objects = UserManager()
